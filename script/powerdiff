@@ -2,7 +2,7 @@
 use warnings;
 use strict;
 
-use version; our $VERSION = qv('0.0.2');
+use version; our $VERSION = qv('0.1.0');
 
 use File::Temp qw( tempdir );
 use Getopt::Long qw(:config bundling);
@@ -84,7 +84,7 @@ for my $path (@REGULAR) {
 my $patch = `cd \Q$dir4diff\E; LANG= diff -uNr old new`;
 while ($patch =~ s/^([^d@\\ +-][^\n]*)\n//ms) {
     my $msg = $1;
-    if ($msg =~ /\AFiles old\/[^\n]* and new(\/[^\n]*) differ\z/ms) {
+    if ($msg =~ /\bFiles old\/[^\n]* and new(\/[^\n]*) differ\z/ims) {
         push @TAR, $1;
     }
     else {
