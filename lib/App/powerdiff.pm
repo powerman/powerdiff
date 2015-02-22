@@ -85,7 +85,4 @@ This is free software, licensed under:
   The MIT (X11) License
 
 
-=head1 SEE ALSO
-
-
 =cut
