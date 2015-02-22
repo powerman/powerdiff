@@ -54,10 +54,21 @@
    "provides" : {
       "App::powerdiff" : {
          "file" : "lib/App/powerdiff.pm",
-         "version" : "v0.1.1"
+         "version" : "v1.0.0"
       }
    },
    "release_status" : "stable",
-   "version" : "v0.1.1"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/powerman/powerdiff/issues"
+      },
+      "homepage" : "https://github.com/powerman/powerdiff",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/powerman/powerdiff.git",
+         "web" : "https://github.com/powerman/powerdiff"
+      }
+   },
+   "version" : "v1.0.0"
 }
 
