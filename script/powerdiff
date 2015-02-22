@@ -2,7 +2,7 @@
 use warnings;
 use strict;
 
-use version; our $VERSION = qv('0.0.1');
+use version; our $VERSION = qv('0.0.2');
 
 use File::Temp qw( tempdir );
 use Getopt::Long qw(:config bundling);
@@ -138,6 +138,7 @@ sub add {
     my ($dir, $name, $n) = @_;
     my $pathname = quote_path("$dir/$name");
     my $m = $n->{mode} & ~07777;
+    warn "add: $dir/$name mode=$m\n";
     if ($m == MODE_DIR) {
         push @SH_PRE, "mkdir $pathname/";
         diff_dir("$dir/$name", {}, $n->{dir});
@@ -249,7 +250,7 @@ sub load_dir {
             # atime/mtime not supported
             # extended attributes not supported
             # acl not supported
-            @{$f}{'mode','size'} = (stat $path)[2,7];
+            @{$f}{'mode','size'} = (lstat $path)[2,7];
             my $m = $f->{mode} & ~07777;
             if ($m == MODE_DIR) {
                 $f->{dir} = load_dir($path, $relpath);
