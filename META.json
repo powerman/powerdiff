@@ -54,10 +54,10 @@
    "provides" : {
       "App::powerdiff" : {
          "file" : "lib/App/powerdiff.pm",
-         "version" : "v0.1.0"
+         "version" : "v0.1.1"
       }
    },
    "release_status" : "stable",
-   "version" : "v0.1.0"
+   "version" : "v0.1.1"
 }
 

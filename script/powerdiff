@@ -2,7 +2,7 @@
 use warnings;
 use strict;
 
-use version; our $VERSION = qv('0.1.0');
+use version; our $VERSION = qv('0.1.1');
 
 use File::Temp qw( tempdir );
 use Getopt::Long qw(:config bundling);
@@ -74,10 +74,10 @@ for my $path (@REGULAR) {
         mkdir "$dir4diff/old/$1" or die "mkdir: $!";
         mkdir "$dir4diff/new/$1" or die "mkdir: $!";
     }
-    if (-f "$dir1/$path") {
+    if (-f "$dir1/$path" && ! -l "$dir1/$path") {
         symlink "$dir1/$path", "$dir4diff/old/$path" or die "symlink: $!";
     }
-    if (-f "$dir2/$path") {
+    if (-f "$dir2/$path" && ! -l "$dir2/$path") {
         symlink "$dir2/$path", "$dir4diff/new/$path" or die "symlink: $!";
     }
 }
