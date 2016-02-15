@@ -1,6 +1,13 @@
+[![Build Status](https://travis-ci.org/powerman/powerdiff.svg?branch=master)](https://travis-ci.org/powerman/powerdiff)
+[![Coverage Status](https://coveralls.io/repos/powerman/powerdiff/badge.svg?branch=master)](https://coveralls.io/r/powerman/powerdiff?branch=master)
+
 # NAME
 
 App::powerdiff - Prepare a diff between two given directories
+
+# VERSION
+
+This document describes App::powerdiff version v1.0.0
 
 # SYNOPSIS
 
@@ -52,14 +59,12 @@ Feel free to fork the repository and submit pull requests.
 
 # AUTHOR
 
-Alex Efros <powerman@cpan.org>
+Alex Efros &lt;powerman@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2009-2013 by Alex Efros <powerman@cpan.org>.
+This software is Copyright (c) 2009-2013 by Alex Efros &lt;powerman@cpan.org>.
 
 This is free software, licensed under:
 
     The MIT (X11) License
-
-# SEE ALSO
