@@ -320,7 +320,7 @@ This combination of files allows to store differences in any possible
 directory content in ease to review and apply format.
 
 This tool was designed to support any possible file/dir attributes - empty
-files and directories, their permissions, special files like fifo, etc.
+files and directories, their permissions, special files like FIFO, etc.
 
 
 =head1 OPTIONS
