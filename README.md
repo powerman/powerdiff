@@ -7,7 +7,7 @@ App::powerdiff - Prepare a diff between two given directories
 
 # VERSION
 
-This document describes App::powerdiff version v1.0.0
+This document describes App::powerdiff version v1.0.1
 
 # SYNOPSIS
 
@@ -59,11 +59,11 @@ Feel free to fork the repository and submit pull requests.
 
 # AUTHOR
 
-Alex Efros &lt;powerman@cpan.org>
+Alex Efros <powerman@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2009- by Alex Efros &lt;powerman@cpan.org>.
+This software is Copyright (c) 2009- by Alex Efros <powerman@cpan.org>.
 
 This is free software, licensed under:
 
